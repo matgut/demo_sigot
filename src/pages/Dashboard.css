@@ -1,0 +1,92 @@
+.dashboard-container {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.stats-row {
+  margin-bottom: 16px;
+}
+
+.orders-card {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+}
+
+.card-header {
+  margin-bottom: 8px;
+}
+
+.filter-row {
+  margin-bottom: 16px;
+}
+
+.orders-table {
+  margin-top: 8px;
+}
+
+.orders-table :global(.ant-table-row) {
+  background: #fff;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.orders-table :global(.ant-table-row:hover) {
+  background: #fafafa;
+}
+
+.status-tag {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.85rem;
+  border-radius: 4px;
+  padding: 4px 12px;
+  transition: all 0.3s ease;
+  display: inline-block;
+  min-width: 120px;
+  text-align: center;
+}
+
+.status-tag.status-en-ejecución {
+  background-color: rgba(24, 144, 255, 0.15);
+  color: #1890ff;
+  border: 1px solid rgba(24, 144, 255, 0.3);
+}
+
+.status-tag.status-asignada {
+  background-color: rgba(250, 173, 20, 0.15);
+  color: #faad14;
+  border: 1px solid rgba(250, 173, 20, 0.3);
+}
+
+.status-tag.status-pendiente {
+  background-color: rgba(89, 89, 89, 0.15);
+  color: #595959;
+  border: 1px solid rgba(89, 89, 89, 0.3);
+}
+
+.status-tag.status-completada {
+  background-color: rgba(82, 196, 26, 0.15);
+  color: #52c41a;
+  border: 1px solid rgba(82, 196, 26, 0.3);
+}
+
+.status-tag.status-cancelada {
+  background-color: rgba(245, 34, 45, 0.15);
+  color: #f5222d;
+  border: 1px solid rgba(245, 34, 45, 0.3);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .filter-row > div {
+    margin-bottom: 8px;
+  }
+}

@@ -1,0 +1,121 @@
+.main-layout {
+  min-height: 100vh;
+}
+
+.logo {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #002140;
+}
+
+.site-header {
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);
+  z-index: 10;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.notification-button {
+  font-size: 18px;
+}
+
+.user-dropdown {
+  cursor: pointer;
+  padding: 8px 0;
+}
+
+.username {
+  margin-left: 8px;
+}
+
+.site-content {
+  margin: 24px;
+  padding: 24px;
+  background: #fff;
+  min-height: 280px;
+  overflow: auto;
+}
+
+.trigger-button {
+  font-size: 18px;
+  line-height: 64px;
+  padding: 0 24px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.trigger-button:hover {
+  color: #1890ff;
+}
+
+@media (max-width: 768px) {
+  .site-content {
+    margin: 16px;
+    padding: 16px;
+  }
+  
+  .site-header {
+    padding: 0 16px;
+  }
+}
+
+body {
+  background-color: #222222 !important;
+}
+
+.container, 
+.card, 
+.panel, 
+.main-content,
+.content-wrapper {
+  background-color: #333333 !important;
+  color: #f0f0f0 !important;
+}
+
+.status-tag {
+  display: block;
+  width: 100%;
+  min-width: 120px;
+  padding: 6px 8px;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: 500;
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.status-execution {
+  background-color: #1890ff;
+}
+
+.status-pending {
+  background-color: #faad14;
+}
+
+.status-completed {
+  background-color: #52c41a;
+}
+
+.status-cancelled {
+  background-color: #595959;
+}
+

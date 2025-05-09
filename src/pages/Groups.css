@@ -1,0 +1,37 @@
+.groups-container {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.groups-card {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03), 0 2px 4px rgba(0, 0, 0, 0.03);
+  border-radius: 8px;
+}
+
+.card-header {
+  margin-bottom: 8px;
+}
+
+.filter-row {
+  margin-bottom: 16px;
+}
+
+.groups-table {
+  margin-top: 16px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .filter-row > div {
+    margin-bottom: 8px;
+  }
+}
